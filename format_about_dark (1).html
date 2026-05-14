@@ -1,0 +1,134 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  .pf-wrap { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; display: flex; flex-direction: column; gap: 1.25rem; padding: 2rem 0; }
+  .pf-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+  .pf-grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; }
+  .pf-card { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 1.25rem 1.5rem; }
+  .pf-label { font-size: 11px; color: #9a8aa0; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 6px; }
+  .pf-title { font-size: 16px; font-weight: 500; color: #1de9b6; margin: 0 0 1rem; }
+  .pf-bio-row { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
+  .pf-icon-circle { width: 28px; height: 28px; border-radius: 50%; background: #3a2a40; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .pf-icon-circle i { font-size: 14px; color: #1de9b6; }
+  .pf-bio-main { font-size: 13px; color: #f0f0f0; margin: 0; line-height: 1.5; font-weight: 500; }
+  .pf-bio-sub { font-size: 12px; color: #9a8aa0; margin: 2px 0 0; }
+  .pf-body { font-size: 13px; color: #c0b0c8; margin: 0; line-height: 1.6; }
+  .pf-skill-row { margin-bottom: 12px; }
+  .pf-skill-top { display: flex; justify-content: space-between; margin-bottom: 5px; }
+  .pf-skill-name { font-size: 13px; color: #f0f0f0; }
+  .pf-skill-pct { font-size: 12px; color: #9a8aa0; }
+  .pf-bar-bg { background: #3a2a40; border-radius: 4px; height: 6px; overflow: hidden; }
+  .pf-bar-fill { height: 100%; background: #1de9b6; border-radius: 4px; }
+  .pf-sublabel { font-size: 11px; color: #9a8aa0; letter-spacing: 0.06em; text-transform: uppercase; margin: 1.2rem 0 0.75rem; }
+  .pf-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pf-tag { font-size: 12px; padding: 5px 12px; border-radius: 999px; border: 0.5px solid rgba(255,255,255,0.15); color: #c0b0c8; }
+  .pf-tag-ai { font-size: 12px; padding: 5px 12px; border-radius: 999px; background: rgba(29,233,182,0.08); border: 0.5px solid rgba(29,233,182,0.4); color: #1de9b6; }
+  .pf-lang-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+  .pf-lang-left { display: flex; align-items: center; gap: 8px; }
+  .pf-lang-name { font-size: 13px; color: #f0f0f0; }
+  .pf-lang-badge { font-size: 11px; padding: 3px 10px; border-radius: 999px; background: rgba(29,233,182,0.08); border: 0.5px solid rgba(29,233,182,0.4); color: #1de9b6; }
+  .pf-focus-card { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 1.25rem; }
+  .pf-focus-icon { font-size: 22px; color: #1de9b6; margin-bottom: 10px; display: block; }
+  .pf-focus-label { font-size: 12px; color: #9a8aa0; margin: 0 0 4px; text-transform: uppercase; letter-spacing: 0.06em; }
+  @media (max-width: 640px) {
+    .pf-grid-2 { grid-template-columns: 1fr; }
+    .pf-grid-3 { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="pf-wrap" style="background:#1a0f1f;padding:2rem;border-radius:0">
+
+  <div class="pf-grid-2">
+    <div class="pf-card">
+      <p class="pf-label">A little about me</p>
+      <h3 class="pf-title">Biography</h3>
+      <div class="pf-bio-row">
+        <div class="pf-icon-circle"><i class="ti ti-school"></i></div>
+        <div>
+          <p class="pf-bio-main">B.F.A. in Film & Media Arts, University of Utah</p>
+          <p class="pf-bio-sub">Class of 2026 · GPA 3.98 · Cum Laude</p>
+        </div>
+      </div>
+      <div class="pf-bio-row">
+        <div class="pf-icon-circle"><i class="ti ti-brush"></i></div>
+        <p class="pf-body">Fine arts background in South Korea — years of drawing</p>
+      </div>
+      <div class="pf-bio-row">
+        <div class="pf-icon-circle"><i class="ti ti-device-tv"></i></div>
+        <p class="pf-body">Directing · Production design · Editing</p>
+      </div>
+    </div>
+
+    <div class="pf-card">
+      <p class="pf-label">Skills</p>
+      <h3 class="pf-title">What I do</h3>
+      <div class="pf-skill-row"><div class="pf-skill-top"><span class="pf-skill-name">Editing</span><span class="pf-skill-pct">100%</span></div><div class="pf-bar-bg"><div class="pf-bar-fill" style="width:100%"></div></div></div>
+      <div class="pf-skill-row"><div class="pf-skill-top"><span class="pf-skill-name">Visual composition & mise-en-scène</span><span class="pf-skill-pct">95%</span></div><div class="pf-bar-bg"><div class="pf-bar-fill" style="width:95%"></div></div></div>
+      <div class="pf-skill-row"><div class="pf-skill-top"><span class="pf-skill-name">Directing</span><span class="pf-skill-pct">90%</span></div><div class="pf-bar-bg"><div class="pf-bar-fill" style="width:90%"></div></div></div>
+      <div class="pf-skill-row"><div class="pf-skill-top"><span class="pf-skill-name">Cinematography</span><span class="pf-skill-pct">85%</span></div><div class="pf-bar-bg"><div class="pf-bar-fill" style="width:85%"></div></div></div>
+      <div class="pf-skill-row"><div class="pf-skill-top"><span class="pf-skill-name">Storyboarding</span><span class="pf-skill-pct">85%</span></div><div class="pf-bar-bg"><div class="pf-bar-fill" style="width:85%"></div></div></div>
+      <div class="pf-skill-row"><div class="pf-skill-top"><span class="pf-skill-name">Production design</span><span class="pf-skill-pct">80%</span></div><div class="pf-bar-bg"><div class="pf-bar-fill" style="width:80%"></div></div></div>
+      <div class="pf-skill-row"><div class="pf-skill-top"><span class="pf-skill-name">AI-assisted filmmaking</span><span class="pf-skill-pct">75%</span></div><div class="pf-bar-bg"><div class="pf-bar-fill" style="width:75%"></div></div></div>
+    </div>
+  </div>
+
+  <div class="pf-grid-2">
+    <div class="pf-card">
+      <p class="pf-label">Software</p>
+      <h3 class="pf-title">Tools</h3>
+      <div class="pf-tags">
+        <span class="pf-tag">Adobe Premiere Pro</span>
+        <span class="pf-tag">After Effects</span>
+        <span class="pf-tag">DaVinci Resolve</span>
+      </div>
+      <p class="pf-sublabel">AI Tools</p>
+      <div class="pf-tags">
+        <span class="pf-tag-ai">Runway</span>
+        <span class="pf-tag-ai">Kling</span>
+        <span class="pf-tag-ai">Midjourney</span>
+        <span class="pf-tag-ai">Gemini</span>
+        <span class="pf-tag-ai">LTX Studio</span>
+        <span class="pf-tag-ai">ElevenLabs</span>
+        <span class="pf-tag-ai">Suno</span>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+      <div class="pf-card">
+        <p class="pf-label">Language</p>
+        <h3 class="pf-title">Languages</h3>
+        <div class="pf-lang-row">
+          <div class="pf-lang-left"><span style="font-size:18px">🇺🇸</span><span class="pf-lang-name">English</span></div>
+          <span class="pf-lang-badge">Fluent</span>
+        </div>
+        <div class="pf-lang-row">
+          <div class="pf-lang-left"><span style="font-size:18px">🇰🇷</span><span class="pf-lang-name">Korean</span></div>
+          <span class="pf-lang-badge">Native</span>
+        </div>
+      </div>
+      <div class="pf-card">
+        <p class="pf-label">Have questions?</p>
+        <h3 class="pf-title">Focus</h3>
+        <p class="pf-body">AI-assisted filmmaking, visual storytelling, and exploring identity and perception through image-driven narratives.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pf-grid-3">
+    <div class="pf-focus-card">
+      <i class="ti ti-eye pf-focus-icon"></i>
+      <p class="pf-focus-label">Visual storytelling</p>
+      <p class="pf-body">Building narratives through color, mise-en-scène, and visual composition</p>
+    </div>
+    <div class="pf-focus-card">
+      <i class="ti ti-cpu pf-focus-icon"></i>
+      <p class="pf-focus-label">AI + film</p>
+      <p class="pf-body">Combining AI-generated and filmed imagery to realize a specific visual vision</p>
+    </div>
+    <div class="pf-focus-card">
+      <i class="ti ti-user-search pf-focus-icon"></i>
+      <p class="pf-focus-label">Identity & perception</p>
+      <p class="pf-body">Exploring identity and perception through image-driven narratives</p>
+    </div>
+  </div>
+
+</div>
