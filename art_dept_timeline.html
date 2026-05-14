@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #1a0f1f; padding: 2rem; }
+  .tl-wrap { font-family: 'Abel', sans-serif; }
+  .tl-divider { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+  .tl-divider-line { height: 1px; background: rgba(255,255,255,0.08); flex: 1; }
+  .tl-divider-label { font-size: 11px; color: #9a8aa0; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
+  .tl-phases { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .tl-phase-left { padding-right: 2rem; border-right: 2px solid rgba(29,233,182,0.25); }
+  .tl-phase-right { padding-left: 2rem; }
+  .tl-phase-header { display: flex; align-items: center; gap: 10px; margin-bottom: 1.25rem; }
+  .tl-dot { width: 12px; height: 12px; border-radius: 50%; background: #1de9b6; flex-shrink: 0; }
+  .tl-phase-label { font-size: 11px; color: #9a8aa0; letter-spacing: 0.08em; text-transform: uppercase; }
+  .tl-phase-title { font-size: 18px; color: #1de9b6; margin-top: 2px; }
+  .tl-items { display: flex; flex-direction: column; gap: 10px; }
+  .tl-item { display: flex; align-items: flex-start; gap: 10px; background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 12px 14px; }
+  .tl-item-icon { width: 28px; height: 28px; border-radius: 50%; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+  .tl-item-icon i { font-size: 14px; color: #1de9b6; }
+  .tl-item-text { font-size: 15px; color: #c0b0c8; line-height: 1.6; }
+  @media (max-width: 600px) {
+    .tl-phases { grid-template-columns: 1fr; }
+    .tl-phase-left { padding-right: 0; border-right: none; border-bottom: 2px solid rgba(29,233,182,0.25); padding-bottom: 1.5rem; margin-bottom: 1.5rem; }
+    .tl-phase-right { padding-left: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="tl-wrap">
+
+  <div class="tl-divider">
+    <div class="tl-divider-line"></div>
+    <span class="tl-divider-label">Art department</span>
+    <div class="tl-divider-line"></div>
+  </div>
+
+  <div class="tl-phases">
+
+    <div class="tl-phase-left">
+      <div class="tl-phase-header">
+        <div class="tl-dot"></div>
+        <div>
+          <p class="tl-phase-label">Phase 1</p>
+          <p class="tl-phase-title">Pre-production</p>
+        </div>
+      </div>
+      <div class="tl-items">
+        <div class="tl-item">
+          <div class="tl-item-icon"><i class="ti ti-tools"></i></div>
+          <p class="tl-item-text">Designed and created custom props for the film's visual concept and atmosphere</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item-icon"><i class="ti ti-shopping-bag"></i></div>
+          <p class="tl-item-text">Personally sourced and purchased props aligned with the film's aesthetic and tone</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item-icon"><i class="ti ti-palette"></i></div>
+          <p class="tl-item-text">Worked closely with the director to oversee overall art direction and visual coordination</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-phase-right">
+      <div class="tl-phase-header">
+        <div class="tl-dot"></div>
+        <div>
+          <p class="tl-phase-label">Phase 2</p>
+          <p class="tl-phase-title">Production</p>
+        </div>
+      </div>
+      <div class="tl-items">
+        <div class="tl-item">
+          <div class="tl-item-icon"><i class="ti ti-layout-kanban"></i></div>
+          <p class="tl-item-text">Managed prop placement and visual continuity for each scene during filming</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item-icon"><i class="ti ti-home"></i></div>
+          <p class="tl-item-text">Prepared set spaces before shoots and handled location wrap and restoration after production</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item-icon"><i class="ti ti-users"></i></div>
+          <p class="tl-item-text">Collaborated with the crew on set to maintain visual consistency and atmosphere throughout filming</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
