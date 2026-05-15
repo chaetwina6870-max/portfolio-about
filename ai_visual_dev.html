@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #1a0f1f; padding: 2rem; }
+  .fl-wrap { font-family: 'Abel', sans-serif; }
+  .fl-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+  .fl-line { height: 1px; flex: 1; background: rgba(255,255,255,0.08); }
+  .fl-label { font-size: 11px; color: #9a8aa0; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
+  .fl-row { display: flex; align-items: center; gap: 0; }
+  .fl-node { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px 18px; display: flex; flex-direction: column; gap: 6px; min-width: 160px; flex: 1; }
+  .fl-node-icon { width: 32px; height: 32px; border-radius: 8px; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 2px; }
+  .fl-node-icon i { font-size: 16px; color: #1de9b6; }
+  .fl-node-title { font-size: 14px; font-weight: 500; color: #f0f0f0; font-family: 'Abel', sans-serif; }
+  .fl-node-desc { font-size: 12px; color: #9a8aa0; line-height: 1.5; font-family: 'Abel', sans-serif; }
+  .fl-node-highlight { border-color: rgba(29,233,182,0.3); background: rgba(29,233,182,0.05); }
+  .fl-arrow { display: flex; align-items: center; justify-content: center; padding: 0 10px; flex-shrink: 0; }
+  .fl-arrow i { font-size: 18px; color: rgba(29,233,182,0.5); }
+  .fl-split { display: flex; flex-direction: column; gap: 10px; flex: 2; }
+  .fl-split-node { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px 18px; display: flex; align-items: flex-start; gap: 10px; }
+  .fl-split-icon { width: 28px; height: 28px; border-radius: 8px; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .fl-split-icon i { font-size: 14px; color: #1de9b6; }
+  .fl-split-title { font-size: 14px; font-weight: 500; color: #f0f0f0; margin: 0 0 3px; font-family: 'Abel', sans-serif; }
+  .fl-split-desc { font-size: 12px; color: #9a8aa0; line-height: 1.5; margin: 0; font-family: 'Abel', sans-serif; }
+  .fl-tag { font-size: 10px; padding: 2px 8px; border-radius: 999px; background: rgba(29,233,182,0.1); border: 0.5px solid rgba(29,233,182,0.3); color: #1de9b6; width: fit-content; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; display: inline-block; }
+  @media (max-width: 600px) {
+    .fl-row { flex-direction: column; align-items: stretch; }
+    .fl-arrow { transform: rotate(90deg); padding: 6px 0; }
+    .fl-split { flex: unset; }
+  }
+</style>
+</head>
+<body>
+<div class="fl-wrap">
+
+  <div class="fl-header">
+    <div class="fl-line"></div>
+    <span class="fl-label">AI-Based Visual Development</span>
+    <div class="fl-line"></div>
+  </div>
+
+  <div class="fl-row">
+
+    <div class="fl-node fl-node-highlight">
+      <div class="fl-node-icon"><i class="ti ti-cpu" aria-hidden="true"></i></div>
+      <p class="fl-node-title">AI Concept</p>
+      <p class="fl-node-desc">Generate visual compositions, tone, and aesthetic direction</p>
+      <span class="fl-tag">Starting point</span>
+    </div>
+
+    <div class="fl-arrow"><i class="ti ti-arrow-right" aria-hidden="true"></i></div>
+
+    <div class="fl-node">
+      <div class="fl-node-icon"><i class="ti ti-photo" aria-hidden="true"></i></div>
+      <p class="fl-node-title">Digital Visual</p>
+      <p class="fl-node-desc">AI-generated imagery shapes the film's concept and narrative</p>
+      <span class="fl-tag">Development</span>
+    </div>
+
+    <div class="fl-arrow"><i class="ti ti-arrow-right" aria-hidden="true"></i></div>
+
+    <div class="fl-split">
+      <div class="fl-split-node">
+        <div class="fl-split-icon"><i class="ti ti-box" aria-hidden="true"></i></div>
+        <div>
+          <p class="fl-split-title">Physical Object</p>
+          <p class="fl-split-desc">Digital concepts materialized through hands-on creation</p>
+          <span class="fl-tag">Materialization</span>
+        </div>
+      </div>
+      <div class="fl-split-node">
+        <div class="fl-split-icon"><i class="ti ti-device-tv" aria-hidden="true"></i></div>
+        <div>
+          <p class="fl-split-title">On-screen Element</p>
+          <p class="fl-split-desc">Visuals translated directly into film tone and aesthetic</p>
+          <span class="fl-tag">Film output</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
