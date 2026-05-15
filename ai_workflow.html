@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #1a0f1f; padding: 2rem; }
+  .aw-wrap { font-family: 'Abel', sans-serif; }
+  .aw-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.75rem; }
+  .aw-line { height: 1px; flex: 1; background: rgba(255,255,255,0.08); }
+  .aw-label { font-size: 11px; color: #9a8aa0; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
+  .aw-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+  .aw-card { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+  .aw-card-top { display: flex; align-items: center; gap: 8px; }
+  .aw-icon { width: 30px; height: 30px; border-radius: 8px; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .aw-icon i { font-size: 15px; color: #1de9b6; }
+  .aw-tool { font-size: 15px; font-weight: 500; color: #f0f0f0; margin: 0; font-family: 'Abel', sans-serif; }
+  .aw-role-tag { font-size: 10px; padding: 2px 8px; border-radius: 999px; background: rgba(29,233,182,0.1); border: 0.5px solid rgba(29,233,182,0.3); color: #1de9b6; width: fit-content; text-transform: uppercase; letter-spacing: 0.05em; }
+  .aw-desc { font-size: 13px; color: #c0b0c8; line-height: 1.55; margin: 0; font-family: 'Abel', sans-serif; }
+  @media (max-width: 600px) {
+    .aw-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="aw-wrap">
+  <div class="aw-header">
+    <div class="aw-line"></div>
+    <span class="aw-label">AI Workflow</span>
+    <div class="aw-line"></div>
+  </div>
+
+  <div class="aw-grid">
+
+    <div class="aw-card">
+      <div class="aw-card-top">
+        <div class="aw-icon"><i class="ti ti-layout-list" aria-hidden="true"></i></div>
+        <p class="aw-tool">LTX Studio</p>
+      </div>
+      <span class="aw-role-tag">Story structure</span>
+      <p class="aw-desc">Structuring story sequences and overall narrative flow</p>
+    </div>
+
+    <div class="aw-card">
+      <div class="aw-card-top">
+        <div class="aw-icon"><i class="ti ti-eye" aria-hidden="true"></i></div>
+        <p class="aw-tool">Gemini</p>
+      </div>
+      <span class="aw-role-tag">Visual continuity</span>
+      <p class="aw-desc">Maintaining visual continuity across generated images</p>
+    </div>
+
+    <div class="aw-card">
+      <div class="aw-card-top">
+        <div class="aw-icon"><i class="ti ti-photo" aria-hidden="true"></i></div>
+        <p class="aw-tool">Midjourney / Nano Banana</p>
+      </div>
+      <span class="aw-role-tag">Scene refinement</span>
+      <p class="aw-desc">Refining individual scenes and enhancing visual concepts</p>
+    </div>
+
+    <div class="aw-card">
+      <div class="aw-card-top">
+        <div class="aw-icon"><i class="ti ti-book" aria-hidden="true"></i></div>
+        <p class="aw-tool">ChatGPT</p>
+      </div>
+      <span class="aw-role-tag">Narrative depth</span>
+      <p class="aw-desc">Developing narrative depth beyond visual generation</p>
+    </div>
+
+    <div class="aw-card">
+      <div class="aw-card-top">
+        <div class="aw-icon"><i class="ti ti-music" aria-hidden="true"></i></div>
+        <p class="aw-tool">Suno</p>
+      </div>
+      <span class="aw-role-tag">Soundtrack</span>
+      <p class="aw-desc">Creating an expansive, cosmic soundtrack</p>
+    </div>
+
+    <div class="aw-card">
+      <div class="aw-card-top">
+        <div class="aw-icon"><i class="ti ti-microphone" aria-hidden="true"></i></div>
+        <p class="aw-tool">ElevenLabs</p>
+      </div>
+      <span class="aw-role-tag">Voice & narration</span>
+      <p class="aw-desc">Generating character voice for narration and dialogue</p>
+    </div>
+
+    <div class="aw-card">
+      <div class="aw-card-top">
+        <div class="aw-icon"><i class="ti ti-video" aria-hidden="true"></i></div>
+        <p class="aw-tool">Kling</p>
+      </div>
+      <span class="aw-role-tag">Video generation</span>
+      <p class="aw-desc">Video generation and final quality enhancement</p>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
