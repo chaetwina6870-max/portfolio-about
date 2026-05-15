@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #1a0f1f; padding: 2rem; }
+  .ad-wrap { font-family: 'Abel', sans-serif; }
+  .ad-title { font-size: 42px; font-weight: 700; color: #1de9b6; margin-bottom: 0.5rem; letter-spacing: 0.02em; }
+  .ad-divider { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+  .ad-divider-line { height: 1px; background: rgba(255,255,255,0.08); flex: 1; }
+  .ad-phase-header { display: flex; align-items: center; gap: 10px; margin-bottom: 1.25rem; }
+  .ad-dot { width: 12px; height: 12px; border-radius: 50%; background: #1de9b6; flex-shrink: 0; }
+  .ad-phase-label { font-size: 11px; color: #9a8aa0; letter-spacing: 0.08em; text-transform: uppercase; }
+  .ad-phase-title { font-size: 18px; color: #1de9b6; margin-top: 2px; font-family: 'Abel', sans-serif; }
+  .ad-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .ad-item { display: flex; align-items: flex-start; gap: 10px; background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px 16px; }
+  .ad-icon { width: 28px; height: 28px; border-radius: 50%; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+  .ad-icon i { font-size: 14px; color: #1de9b6; }
+  .ad-text { font-size: 13px; color: #c0b0c8; line-height: 1.6; font-family: 'Abel', sans-serif; margin: 0; }
+  @media (max-width: 600px) { .ad-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="ad-wrap">
+  <p class="ad-title">Art Department</p>
+  <div class="ad-divider"><div class="ad-divider-line"></div></div>
+
+  <div class="ad-phase-header">
+    <div class="ad-dot"></div>
+    <div>
+      <p class="ad-phase-label">On set</p>
+      <p class="ad-phase-title">Production</p>
+    </div>
+  </div>
+
+  <div class="ad-grid">
+    <div class="ad-item">
+      <div class="ad-icon"><i class="ti ti-tools" aria-hidden="true"></i></div>
+      <p class="ad-text">Prepared and organized props required for the music video's visual concept and atmosphere</p>
+    </div>
+    <div class="ad-item">
+      <div class="ad-icon"><i class="ti ti-layout-board" aria-hidden="true"></i></div>
+      <p class="ad-text">Assisted with set dressing and on-set styling throughout filming</p>
+    </div>
+    <div class="ad-item">
+      <div class="ad-icon"><i class="ti ti-eye" aria-hidden="true"></i></div>
+      <p class="ad-text">Maintained visual continuity between scenes during production</p>
+    </div>
+    <div class="ad-item">
+      <div class="ad-icon"><i class="ti ti-users" aria-hidden="true"></i></div>
+      <p class="ad-text">Supported on-set art department coordination and overall filming environment management</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
