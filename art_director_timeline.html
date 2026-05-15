@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #1a0f1f; padding: 2rem; }
+  .tl-wrap { font-family: 'Abel', sans-serif; }
+  .tl-title { font-size: 42px; font-weight: 700; color: #1de9b6; margin-bottom: 0.5rem; letter-spacing: 0.02em; }
+  .tl-divider { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+  .tl-divider-line { height: 1px; background: rgba(255,255,255,0.08); flex: 1; }
+  .tl-phases { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .tl-phase-left { padding-right: 2rem; border-right: 2px solid rgba(29,233,182,0.25); }
+  .tl-phase-right { padding-left: 2rem; }
+  .tl-phase-header { display: flex; align-items: center; gap: 10px; margin-bottom: 1.25rem; }
+  .tl-dot { width: 12px; height: 12px; border-radius: 50%; background: #1de9b6; flex-shrink: 0; }
+  .tl-phase-label { font-size: 11px; color: #9a8aa0; letter-spacing: 0.08em; text-transform: uppercase; }
+  .tl-phase-title { font-size: 18px; color: #1de9b6; margin-top: 2px; font-family: 'Abel', sans-serif; }
+  .tl-items { display: flex; flex-direction: column; gap: 10px; }
+  .tl-item { display: flex; align-items: flex-start; gap: 10px; background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 12px 14px; }
+  .tl-item-icon { width: 28px; height: 28px; border-radius: 50%; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+  .tl-item-icon i { font-size: 14px; color: #1de9b6; }
+  .tl-item-text { font-size: 13px; color: #c0b0c8; line-height: 1.6; font-family: 'Abel', sans-serif; }
+  @media (max-width: 600px) {
+    .tl-phases { grid-template-columns: 1fr; }
+    .tl-phase-left { padding-right: 0; border-right: none; border-bottom: 2px solid rgba(29,233,182,0.25); padding-bottom: 1.5rem; margin-bottom: 1.5rem; }
+    .tl-phase-right { padding-left: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="tl-wrap">
+
+  <p class="tl-title">Art Director</p>
+
+  <div class="tl-divider">
+    <div class="tl-divider-line"></div>
+  </div>
+
+  <div class="tl-phases">
+
+    <div class="tl-phase-left">
+      <div class="tl-phase-header">
+        <div class="tl-dot"></div>
+        <div>
+          <p class="tl-phase-label">Phase 1</p>
+          <p class="tl-phase-title">Pre-production</p>
+        </div>
+      </div>
+      <div class="tl-items">
+        <div class="tl-item">
+          <div class="tl-item-icon"><i class="ti ti-users" aria-hidden="true"></i></div>
+          <p class="tl-item-text">Participated in actor auditions to assess alignment with the project's tone and visual direction</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item-icon"><i class="ti ti-brush" aria-hidden="true"></i></div>
+          <p class="tl-item-text">Consulted with the director on makeup direction and costume styling to support the film's visual concept</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item-icon"><i class="ti ti-sparkles" aria-hidden="true"></i></div>
+          <p class="tl-item-text">Collaborated on developing a retro 1980s-inspired aesthetic for the characters and overall atmosphere</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-phase-right">
+      <div class="tl-phase-header">
+        <div class="tl-dot"></div>
+        <div>
+          <p class="tl-phase-label">Phase 2</p>
+          <p class="tl-phase-title">Production</p>
+        </div>
+      </div>
+      <div class="tl-items">
+        <div class="tl-item">
+          <div class="tl-item-icon"><i class="ti ti-scissors" aria-hidden="true"></i></div>
+          <p class="tl-item-text">Served as Hair & Makeup Coordinator, maintaining on-set continuity throughout filming</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item-icon"><i class="ti ti-shirt" aria-hidden="true"></i></div>
+          <p class="tl-item-text">Styled costumes and organized set spaces to reflect each scene's atmosphere and visual tone</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item-icon"><i class="ti ti-layout-board" aria-hidden="true"></i></div>
+          <p class="tl-item-text">Oversaw on-screen props and assisted with location preparation and set dressing</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item-icon"><i class="ti ti-home" aria-hidden="true"></i></div>
+          <p class="tl-item-text">Managed final location wrap, including repainting surfaces and restoring the location to its original condition</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
