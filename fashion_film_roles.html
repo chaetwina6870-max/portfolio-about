@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #1a0f1f; padding: 2rem; }
+  .ff-wrap { font-family: 'Abel', sans-serif; }
+  .ff-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+  .ff-line { height: 1px; flex: 1; background: rgba(255,255,255,0.08); }
+  .ff-label { font-size: 11px; color: #9a8aa0; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
+  .ff-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+  .ff-card { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.25rem 1.5rem; }
+  .ff-card-top { display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; }
+  .ff-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .ff-icon i { font-size: 18px; color: #1de9b6; }
+  .ff-role { font-size: 22px; color: #1de9b6; margin: 0; font-family: 'Abel', sans-serif; }
+  .ff-divider { height: 1px; background: rgba(255,255,255,0.06); margin-bottom: 1rem; }
+  .ff-items { display: flex; flex-direction: column; gap: 8px; }
+  .ff-item { display: flex; align-items: flex-start; gap: 8px; }
+  .ff-dot { width: 5px; height: 5px; border-radius: 50%; background: #1de9b6; flex-shrink: 0; margin-top: 7px; opacity: 0.6; }
+  .ff-text { font-size: 13px; color: #c0b0c8; line-height: 1.6; margin: 0; font-family: 'Abel', sans-serif; }
+  @media (max-width: 600px) {
+    .ff-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="ff-wrap">
+
+  <div class="ff-header">
+    <div class="ff-line"></div>
+    <span class="ff-label">Role & Contribution</span>
+    <div class="ff-line"></div>
+  </div>
+
+  <div class="ff-grid">
+
+    <div class="ff-card">
+      <div class="ff-card-top">
+        <div class="ff-icon"><i class="ti ti-video" aria-hidden="true"></i></div>
+        <p class="ff-role">Director</p>
+      </div>
+      <div class="ff-divider"></div>
+      <div class="ff-items">
+        <div class="ff-item">
+          <div class="ff-dot"></div>
+          <p class="ff-text">Developed a vintage-inspired visual concept emphasizing bold primary colors</p>
+        </div>
+        <div class="ff-item">
+          <div class="ff-dot"></div>
+          <p class="ff-text">Created a vivid and stylized atmosphere through intentional aesthetic direction</p>
+        </div>
+        <div class="ff-item">
+          <div class="ff-dot"></div>
+          <p class="ff-text">Shot entirely in a chromakey studio for full control over the visual environment</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ff-card">
+      <div class="ff-card-top">
+        <div class="ff-icon"><i class="ti ti-cut" aria-hidden="true"></i></div>
+        <p class="ff-role">Editor</p>
+      </div>
+      <div class="ff-divider"></div>
+      <div class="ff-items">
+        <div class="ff-item">
+          <div class="ff-dot"></div>
+          <p class="ff-text">Built a cohesive aesthetic by combining music, costume, makeup, and editing</p>
+        </div>
+        <div class="ff-item">
+          <div class="ff-dot"></div>
+          <p class="ff-text">Crafted a playful and kitsch visual tone consistent throughout the film</p>
+        </div>
+        <div class="ff-item">
+          <div class="ff-dot"></div>
+          <p class="ff-text">Integrated all visual elements into a unified and stylized final cut</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
