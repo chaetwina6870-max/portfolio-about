@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Storyboard Section</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    background: transparent;
+  }
+
+  .sb-wrap {
+    font-family: 'Abel', sans-serif;
+    background: #1a0f1f;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .sb-title {
+    font-size: 72px;
+    font-weight: 700;
+    color: #f4f4f4;
+    margin-bottom: 2rem;
+    line-height: 1;
+  }
+
+  .sb-desc {
+    max-width: 1100px;
+    margin: 0 auto 3rem auto;
+    font-size: 32px;
+    line-height: 1.7;
+    color: #e5ddea;
+    font-weight: 400;
+  }
+
+  .sb-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 2rem;
+  }
+
+  .sb-stat {
+    background: #2a1a2e;
+    border: 0.5px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 1.5rem;
+  }
+
+  .sb-num {
+    font-size: 52px;
+    color: #1de9b6;
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+
+  .sb-label {
+    font-size: 15px;
+    color: #b7aabd;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    .sb-title {
+      font-size: 52px;
+    }
+
+    .sb-desc {
+      font-size: 22px;
+    }
+
+    .sb-stats {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+
+<body>
+<div class="sb-wrap">
+  <div class="sb-title">Storyboard</div>
+
+  <div class="sb-desc">
+    With a background in fine arts and drawing instruction, I developed storyboards for all of my projects, using visual planning as a foundation for cinematic composition, emotion, and rhythm.
+  </div>
+
+  <div class="sb-stats">
+    <div class="sb-stat">
+      <div class="sb-num">50+</div>
+      <div class="sb-label">Storyboard Frames Designed</div>
+    </div>
+
+    <div class="sb-stat">
+      <div class="sb-num">10+</div>
+      <div class="sb-label">Film & Commercial Projects Visualized</div>
+    </div>
+
+    <div class="sb-stat">
+      <div class="sb-num">3</div>
+      <div class="sb-label">Years of Art Instruction</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
