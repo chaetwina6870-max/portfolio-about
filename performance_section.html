@@ -1,0 +1,44 @@
+
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+
+<style>
+  .pf-wrap { font-family: 'Abel', sans-serif; padding: 2rem; background: #1a0f1f; border-radius: 12px; }
+  .pf-title { font-size: 42px; font-weight: 700; color: #1de9b6; margin-bottom: 0.5rem; letter-spacing: 0.02em; }
+  .pf-divider { height: 1px; background: rgba(255,255,255,0.08); margin-bottom: 2rem; }
+  .pf-top { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 1.5rem; }
+  .pf-stat { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.25rem; text-align: center; }
+  .pf-stat-num { font-size: 40px; font-weight: 700; color: #1de9b6; line-height: 1; margin-bottom: 6px; }
+  .pf-stat-label { font-size: 12px; color: #9a8aa0; text-transform: uppercase; letter-spacing: 0.06em; }
+  .pf-desc { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.25rem 1.5rem; display: flex; align-items: flex-start; gap: 12px; }
+  .pf-desc-icon { width: 32px; height: 32px; border-radius: 8px; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .pf-desc-icon i { font-size: 16px; color: #1de9b6; }
+  .pf-desc-text { font-size: 14px; color: #c0b0c8; line-height: 1.7; margin: 0; }
+  .pf-highlight { color: #1de9b6; font-weight: 500; }
+  @media (max-width: 600px) { .pf-top { grid-template-columns: 1fr; } }
+</style>
+
+<div class="pf-wrap">
+  <p class="pf-title">Performance</p>
+  <div class="pf-divider"></div>
+
+  <div class="pf-top">
+    <div class="pf-stat">
+      <p class="pf-stat-num">10+</p>
+      <p class="pf-stat-label">Short film appearances</p>
+    </div>
+    <div class="pf-stat">
+      <p class="pf-stat-num">2</p>
+      <p class="pf-stat-label">Years of acting training</p>
+    </div>
+    <div class="pf-stat">
+      <p class="pf-stat-num">2in1</p>
+      <p class="pf-stat-label">Director & Actor</p>
+    </div>
+  </div>
+
+  <div class="pf-desc">
+    <div class="pf-desc-icon"><i class="ti ti-masks-theater" aria-hidden="true"></i></div>
+    <p class="pf-desc-text">One of my strengths as a director is that <span class="pf-highlight">I can act</span>. Understanding performance from the inside gives me a deeper range when building characters and a more layered approach to storytelling. Having trained at an acting studio and appeared in <span class="pf-highlight">10+ short films</span>, this practice of inhabiting different perspectives directly shapes how I create and direct.</p>
+  </div>
+</div>
