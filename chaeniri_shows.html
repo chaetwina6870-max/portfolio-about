@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #1a0f1f; padding: 2rem; }
+  .cs-wrap { font-family: 'Abel', sans-serif; display: flex; flex-direction: column; gap: 1.5rem; }
+  .cs-top { display: flex; align-items: center; gap: 14px; margin-bottom: 0.4rem; }
+  .cs-yt-icon { width: 44px; height: 44px; border-radius: 10px; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .cs-yt-icon i { font-size: 26px; color: #1de9b6; }
+  .cs-title { font-size: 42px; font-weight: 700; color: #1de9b6; letter-spacing: 0.02em; margin: 0; }
+  .cs-tagline { font-size: 14px; color: #9a8aa0; margin-bottom: 1.5rem; }
+  .cs-divider { height: 1px; background: rgba(255,255,255,0.08); margin-bottom: 1.5rem; }
+  .cs-stats { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 1.5rem; }
+  .cs-stat { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.25rem; text-align: center; }
+  .cs-stat-num { font-size: 32px; font-weight: 700; color: #1de9b6; line-height: 1; margin-bottom: 6px; }
+  .cs-stat-label { font-size: 11px; color: #9a8aa0; text-transform: uppercase; letter-spacing: 0.06em; }
+  .cs-stat-sub { font-size: 10px; color: rgba(154,138,160,0.6); margin-top: 3px; }
+  .cs-tools { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 1rem; }
+  .cs-card { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.25rem 1.5rem; }
+  .cs-card-label { font-size: 11px; color: #9a8aa0; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem; }
+  .cs-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .cs-tag { font-size: 12px; padding: 4px 12px; border-radius: 999px; background: rgba(29,233,182,0.08); border: 0.5px solid rgba(29,233,182,0.3); color: #1de9b6; }
+  .cs-desc { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.25rem 1.5rem; display: flex; align-items: flex-start; gap: 12px; }
+  .cs-desc-icon { width: 30px; height: 30px; border-radius: 8px; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .cs-desc-icon i { font-size: 15px; color: #1de9b6; }
+  .cs-desc-text { font-size: 16px; color: #c0b0c8; line-height: 1.7; margin: 0; }
+  .cs-highlight { color: #1de9b6; }
+  .cs-watch { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; align-items: center; }
+  .cs-banner { width: 100%; height: 180px; object-fit: cover; display: block; }
+  .cs-btn-wrap { padding: 1.5rem; }
+  .cs-btn { display: inline-flex; align-items: center; gap: 8px; background: rgba(29,233,182,0.1); border: 0.5px solid rgba(29,233,182,0.4); border-radius: 999px; padding: 10px 28px; color: #1de9b6; font-size: 16px; text-decoration: none; font-family: 'Abel', sans-serif; cursor: pointer; transition: background 0.2s; }
+  .cs-btn:hover { background: rgba(29,233,182,0.2); }
+  .cs-btn i { font-size: 18px; }
+  @media (max-width: 600px) {
+    .cs-stats { grid-template-columns: 1fr 1fr; }
+    .cs-tools { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="cs-wrap">
+
+  <!-- Section 1: Stats & Info -->
+  <div>
+    <div class="cs-top">
+      <div class="cs-yt-icon"><i class="ti ti-brand-youtube" aria-hidden="true"></i></div>
+      <p class="cs-title">Chaeniri Shows</p>
+    </div>
+    <p class="cs-tagline">Solo-produced study abroad vlog. Filming, editing, and thumbnail design, all done independently</p>
+    <div class="cs-divider"></div>
+
+    <div class="cs-stats">
+      <div class="cs-stat">
+        <p class="cs-stat-num">65.9K</p>
+        <p class="cs-stat-label">Total views</p>
+      </div>
+      <div class="cs-stat">
+        <p class="cs-stat-num">1.6K</p>
+        <p class="cs-stat-label">Avg. views</p>
+        <p class="cs-stat-sub">per video</p>
+      </div>
+      <div class="cs-stat">
+        <p class="cs-stat-num">47+</p>
+        <p class="cs-stat-label">Videos uploaded</p>
+      </div>
+      <div class="cs-stat">
+        <p class="cs-stat-num">74</p>
+        <p class="cs-stat-label">Subscribers</p>
+        <p class="cs-stat-sub">organic growth</p>
+      </div>
+    </div>
+
+    <div class="cs-tools">
+      <div class="cs-card">
+        <p class="cs-card-label">Video editing</p>
+        <div class="cs-tags">
+          <span class="cs-tag">CapCut</span>
+          <span class="cs-tag">Premiere Pro</span>
+        </div>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-label">Thumbnail design</p>
+        <div class="cs-tags">
+          <span class="cs-tag">Epik</span>
+          <span class="cs-tag">Procreate</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-desc">
+      <div class="cs-desc-icon"><i class="ti ti-camera" aria-hidden="true"></i></div>
+      <p class="cs-desc-text">Independently managing a <span class="cs-highlight">Korean student in the US vlog channel</span>. From concept and filming to editing and thumbnail design, every video is solo-produced, reflecting a hands-on approach to <span class="cs-highlight">content creation and visual storytelling</span>.</p>
+    </div>
+  </div>
+
+  <!-- Section 2: Banner + Watch on YouTube -->
+  <div class="cs-watch">
+    <img class="cs-banner" src="banner.jpeg" alt="Chaeniri Shows YouTube channel banner">
+    <div class="cs-btn-wrap">
+      <a class="cs-btn" href="https://youtube.com/channel/UCI5wyqiNFaKXMaQ0-flWZ8Q" target="_blank">
+        <i class="ti ti-brand-youtube" aria-hidden="true"></i>
+        Watch on YouTube
+      </a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
