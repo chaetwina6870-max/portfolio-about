@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #1a0f1f; padding: 2rem; }
+  .tv-wrap { font-family: 'Abel', sans-serif; display: flex; flex-direction: column; gap: 1rem; }
+  .tv-concept { background: #2a1a2e; border: 0.5px solid rgba(29,233,182,0.25); border-radius: 12px; padding: 1.25rem 1.5rem; display: flex; align-items: flex-start; gap: 14px; }
+  .tv-concept-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .tv-concept-icon i { font-size: 18px; color: #1de9b6; }
+  .tv-concept-title { font-size: 15px; color: #f0f0f0; margin: 0 0 5px; }
+  .tv-concept-text { font-size: 14px; color: #c0b0c8; line-height: 1.7; margin: 0; }
+  .tv-highlight { color: #1de9b6; }
+  .tv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .tv-point { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1rem 1.25rem; display: flex; align-items: flex-start; gap: 10px; }
+  .tv-point-icon { width: 28px; height: 28px; border-radius: 50%; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .tv-point-icon i { font-size: 14px; color: #1de9b6; }
+  .tv-point-title { font-size: 13px; color: #1de9b6; margin: 0 0 3px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .tv-point-text { font-size: 13px; color: #c0b0c8; line-height: 1.55; margin: 0; }
+  .tv-tools { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1rem 1.5rem; display: flex; align-items: center; gap: 1rem; }
+  .tv-tools-label { font-size: 11px; color: #9a8aa0; text-transform: uppercase; letter-spacing: 0.06em; white-space: nowrap; }
+  .tv-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tv-tag { font-size: 12px; padding: 4px 12px; border-radius: 999px; background: rgba(29,233,182,0.08); border: 0.5px solid rgba(29,233,182,0.3); color: #1de9b6; }
+  @media (max-width: 600px) { .tv-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="tv-wrap">
+
+  <div class="tv-concept">
+    <div class="tv-concept-icon"><i class="ti ti-book"></i></div>
+    <div>
+      <p class="tv-concept-title">Diary-book concept</p>
+      <p class="tv-concept-text">Each thumbnail follows a <span class="tv-highlight">consistent diary-book format</span> — designed to feel like pulling a book off a shelf. The concept blends <span class="tv-highlight">analog warmth</span> with handwritten typography, creating an intimate and recognizable visual identity across all episodes.</p>
+    </div>
+  </div>
+
+  <div class="tv-grid">
+    <div class="tv-point">
+      <div class="tv-point-icon"><i class="ti ti-eye"></i></div>
+      <div>
+        <p class="tv-point-title">Visual identity</p>
+        <p class="tv-point-text">Consistent diary aesthetic across 47+ episodes — distinct in content, unified in style</p>
+      </div>
+    </div>
+    <div class="tv-point">
+      <div class="tv-point-icon"><i class="ti ti-writing"></i></div>
+      <div>
+        <p class="tv-point-title">Analog-inspired</p>
+        <p class="tv-point-text">Handwritten typography and diary-book framing for an intimate, warm feel</p>
+      </div>
+    </div>
+    <div class="tv-point">
+      <div class="tv-point-icon"><i class="ti ti-users"></i></div>
+      <div>
+        <p class="tv-point-title">Viewer-first thinking</p>
+        <p class="tv-point-text">Designed so audiences can browse and choose episodes by visual cue</p>
+      </div>
+    </div>
+    <div class="tv-point">
+      <div class="tv-point-icon"><i class="ti ti-pencil"></i></div>
+      <div>
+        <p class="tv-point-title">Solo designed</p>
+        <p class="tv-point-text">Every thumbnail individually crafted — concept, layout, and typography</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tv-tools">
+    <span class="tv-tools-label">Tools</span>
+    <div class="tv-tags">
+      <span class="tv-tag">Procreate</span>
+      <span class="tv-tag">Epik</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
