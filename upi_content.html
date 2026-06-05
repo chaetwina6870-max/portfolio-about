@@ -1,0 +1,88 @@
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+
+<style>
+  .upi-wrap { font-family: 'Abel', sans-serif; padding: 2.5rem; background: #1a0f1f; border-radius: 16px; }
+  .upi-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+  .upi-title { font-size: 48px; font-weight: 700; color: #1de9b6; letter-spacing: 0.02em; margin: 0; }
+  .upi-date { font-size: 22px; color: #9a8aa0; white-space: nowrap; }
+  .upi-divider { height: 1px; background: rgba(255,255,255,0.08); margin-bottom: 1.75rem; }
+
+  .upi-concept { background: #2a1a2e; border: 0.5px solid rgba(29,233,182,0.25); border-radius: 14px; padding: 1.5rem 1.75rem; margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 16px; }
+  .upi-concept-icon { width: 44px; height: 44px; border-radius: 12px; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .upi-concept-icon i { font-size: 22px; color: #1de9b6; }
+  .upi-concept-title { font-size: 18px; font-weight: 500; color: #f0f0f0; margin: 0 0 8px; }
+  .upi-concept-text { font-size: 16px; color: #c0b0c8; line-height: 1.75; margin: 0; }
+  .upi-bold { color: #1de9b6; font-weight: 700; }
+
+  .upi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 1.5rem; }
+  .upi-point { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 1.25rem 1.5rem; display: flex; align-items: flex-start; gap: 12px; }
+  .upi-point-icon { width: 34px; height: 34px; border-radius: 50%; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .upi-point-icon i { font-size: 17px; color: #1de9b6; }
+  .upi-point-title { font-size: 14px; color: #1de9b6; margin: 0 0 5px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .upi-point-text { font-size: 14px; color: #c0b0c8; line-height: 1.6; margin: 0; }
+
+  .upi-tools { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 1.25rem 1.75rem; display: flex; align-items: center; gap: 1rem; }
+  .upi-tools-label { font-size: 12px; color: #9a8aa0; text-transform: uppercase; letter-spacing: 0.06em; white-space: nowrap; }
+  .upi-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+  .upi-tag { font-size: 13px; padding: 6px 14px; border-radius: 999px; background: rgba(29,233,182,0.08); border: 0.5px solid rgba(29,233,182,0.3); color: #1de9b6; }
+
+  @media (max-width: 600px) { .upi-grid { grid-template-columns: 1fr; } }
+</style>
+
+<div class="upi-wrap">
+  <div class="upi-header">
+    <p class="upi-title">UPI Cinematographer Intern</p>
+    <p class="upi-date">Sep – Dec 2023</p>
+  </div>
+  <div class="upi-divider"></div>
+
+  <div class="upi-concept">
+    <div class="upi-concept-icon"><i class="ti ti-video" aria-hidden="true"></i></div>
+    <div>
+      <p class="upi-concept-title">On-ground event cinematography</p>
+      <p class="upi-concept-text">Covered <span class="upi-bold">4+ live events</span> across academic, cultural, and film industry settings as part of a <span class="upi-bold">25-person, 9-department</span> production team. Adapted to fast-paced, unscripted environments by operating production radio and coordinating with crew in real time, capturing audiences of up to <span class="upi-bold">100 people</span> at F&MAD Film Festival and <span class="upi-bold">50+</span> at a film director lecture.</p>
+    </div>
+  </div>
+
+  <div class="upi-grid">
+    <div class="upi-point">
+      <div class="upi-point-icon"><i class="ti ti-building" aria-hidden="true"></i></div>
+      <div>
+        <p class="upi-point-title">Town Hall</p>
+        <p class="upi-point-text">Town Hall coverage for <strong>100+ attendees</strong>, University of Utah Asia Campus</p>
+      </div>
+    </div>
+    <div class="upi-point">
+      <div class="upi-point-icon"><i class="ti ti-microphone" aria-hidden="true"></i></div>
+      <div>
+        <p class="upi-point-title">Director Lecture</p>
+        <p class="upi-point-text">Covered lecture by Kenneth Dagatan for an audience of <strong>50+ film students</strong></p>
+      </div>
+    </div>
+    <div class="upi-point">
+      <div class="upi-point-icon"><i class="ti ti-trophy" aria-hidden="true"></i></div>
+      <div>
+        <p class="upi-point-title">F&MAD Film Festival</p>
+        <p class="upi-point-text">On-ground coverage at F&MAD Film Festival, audience of <strong>100+</strong>, operating production radio</p>
+      </div>
+    </div>
+    <div class="upi-point">
+      <div class="upi-point-icon"><i class="ti ti-leaf" aria-hidden="true"></i></div>
+      <div>
+        <p class="upi-point-title">Field & Academic</p>
+        <p class="upi-point-text">Captured Urban Ecology field trip and student presentations across <strong>multiple locations</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="upi-tools">
+    <span class="upi-tools-label">Role</span>
+    <div class="upi-tags">
+      <span class="upi-tag">Cinematographer</span>
+      <span class="upi-tag">On-ground crew</span>
+      <span class="upi-tag">Production radio</span>
+      <span class="upi-tag">Live event coverage</span>
+    </div>
+  </div>
+</div>
