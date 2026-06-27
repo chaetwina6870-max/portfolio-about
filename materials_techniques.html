@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #1a0f1f; padding: 1.5rem; }
+  .mt-wrap { font-family: 'Abel', sans-serif; }
+  .mt-label { font-size: 11px; color: #9a8aa0; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.85rem; }
+  .mt-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+  .mt-card { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 0.9rem 1rem; display: flex; align-items: center; gap: 10px; }
+  .mt-icon { width: 28px; height: 28px; border-radius: 50%; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .mt-icon i { font-size: 14px; color: #1de9b6; }
+  .mt-text { font-size: 14px; color: #f0f0f0; }
+  @media (max-width: 600px) { .mt-grid { grid-template-columns: 1fr 1fr; } }
+</style>
+</head>
+<body>
+<div class="mt-wrap">
+  <p class="mt-label">Materials & Techniques</p>
+  <div class="mt-grid">
+    <div class="mt-card">
+      <div class="mt-icon"><i class="ti ti-mood-smile"></i></div>
+      <p class="mt-text">Clay Sculpting</p>
+    </div>
+    <div class="mt-card">
+      <div class="mt-icon"><i class="ti ti-droplet"></i></div>
+      <p class="mt-text">Resin Casting</p>
+    </div>
+    <div class="mt-card">
+      <div class="mt-icon"><i class="ti ti-circuit-resistor"></i></div>
+      <p class="mt-text">Wire Crafting</p>
+    </div>
+    <div class="mt-card">
+      <div class="mt-icon"><i class="ti ti-brush"></i></div>
+      <p class="mt-text">Acrylic Painting</p>
+    </div>
+    <div class="mt-card">
+      <div class="mt-icon"><i class="ti ti-circle-dot"></i></div>
+      <p class="mt-text">Beadwork</p>
+    </div>
+    <div class="mt-card">
+      <div class="mt-icon"><i class="ti ti-sparkles"></i></div>
+      <p class="mt-text">Gel Nail Art</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
