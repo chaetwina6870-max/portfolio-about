@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #1a0f1f; padding: 2rem; }
+  .df-wrap { font-family: 'Abel', sans-serif; }
+  .df-title { font-size: 42px; font-weight: 700; color: #1de9b6; letter-spacing: 0.02em; margin: 0 0 1.25rem; }
+  .df-intro { background: #2a1a2e; border: 0.5px solid rgba(29,233,182,0.25); border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 14px; }
+  .df-intro-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .df-intro-icon i { font-size: 18px; color: #1de9b6; }
+  .df-intro-label { font-size: 11px; color: #9a8aa0; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 5px; }
+  .df-intro-text { font-size: 15px; color: #c0b0c8; line-height: 1.7; margin: 0; }
+
+  .df-exp-label { font-size: 11px; color: #9a8aa0; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
+  .df-exp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 1.5rem; }
+  .df-exp-card { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1.25rem; text-align: center; }
+  .df-exp-num { font-size: 32px; font-weight: 700; color: #1de9b6; line-height: 1; margin-bottom: 6px; }
+  .df-exp-text { font-size: 12px; color: #9a8aa0; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  .df-focus-label { font-size: 11px; color: #9a8aa0; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
+  .df-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .df-card { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1rem 1.25rem; display: flex; align-items: center; gap: 12px; }
+  .df-card-icon { width: 32px; height: 32px; border-radius: 50%; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .df-card-icon i { font-size: 16px; color: #1de9b6; }
+  .df-card-text { font-size: 15px; color: #f0f0f0; }
+  @media (max-width: 600px) { .df-grid, .df-exp-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="df-wrap">
+  <p class="df-title">Design Fundamentals</p>
+
+  <div class="df-intro">
+    <div class="df-intro-icon"><i class="ti ti-compass"></i></div>
+    <div>
+      <p class="df-intro-label">Introduction</p>
+      <p class="df-intro-text">Foundation studies exploring form, perspective, composition, and material rendering through structured visual problem-solving. These works reflect the essential principles that continue to inform my approach to design and visual storytelling.</p>
+    </div>
+  </div>
+
+  <p class="df-exp-label">Experience</p>
+  <div class="df-exp-grid">
+    <div class="df-exp-card">
+      <p class="df-exp-num">5</p>
+      <p class="df-exp-text">Years of Formal Art Training</p>
+    </div>
+    <div class="df-exp-card">
+      <p class="df-exp-num">2.5</p>
+      <p class="df-exp-text">Years as an Art Instructor</p>
+    </div>
+  </div>
+
+  <p class="df-focus-label">Core Skills</p>
+  <div class="df-grid">
+    <div class="df-card">
+      <div class="df-card-icon"><i class="ti ti-cube-3d-sphere"></i></div>
+      <p class="df-card-text">Perspective & Spatial Awareness</p>
+    </div>
+    <div class="df-card">
+      <div class="df-card-icon"><i class="ti ti-shape"></i></div>
+      <p class="df-card-text">Form & Structure</p>
+    </div>
+    <div class="df-card">
+      <div class="df-card-icon"><i class="ti ti-texture"></i></div>
+      <p class="df-card-text">Material Rendering</p>
+    </div>
+    <div class="df-card">
+      <div class="df-card-icon"><i class="ti ti-layout-grid"></i></div>
+      <p class="df-card-text">Composition</p>
+    </div>
+    <div class="df-card">
+      <div class="df-card-icon"><i class="ti ti-bulb"></i></div>
+      <p class="df-card-text">Visual Problem Solving</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
