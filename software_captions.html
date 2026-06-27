@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #1a0f1f; padding: 1.5rem; }
+  .sw-wrap { font-family: 'Abel', sans-serif; }
+  .sw-label { font-size: 11px; color: #9a8aa0; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.85rem; }
+  .sw-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .sw-card { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 0.9rem 1.1rem; display: flex; align-items: flex-start; gap: 10px; }
+  .sw-icon { width: 30px; height: 30px; border-radius: 8px; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+  .sw-icon i { font-size: 15px; color: #1de9b6; }
+  .sw-name { font-size: 15px; color: #f0f0f0; margin: 0 0 2px; }
+  .sw-caption { font-size: 12px; color: #9a8aa0; margin: 0; line-height: 1.4; }
+  @media (max-width: 600px) { .sw-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="sw-wrap">
+  <p class="sw-label">Software</p>
+  <div class="sw-grid">
+    <div class="sw-card">
+      <div class="sw-icon"><i class="ti ti-brand-adobe"></i></div>
+      <div>
+        <p class="sw-name">Photoshop</p>
+        <p class="sw-caption">Reference organization, image editing</p>
+      </div>
+    </div>
+    <div class="sw-card">
+      <div class="sw-icon"><i class="ti ti-layout-grid"></i></div>
+      <div>
+        <p class="sw-name">Illustrator</p>
+        <p class="sw-caption">Layout, graphic elements</p>
+      </div>
+    </div>
+    <div class="sw-card">
+      <div class="sw-icon"><i class="ti ti-layout-collage"></i></div>
+      <div>
+        <p class="sw-name">Canva</p>
+        <p class="sw-caption">Mood board composition</p>
+      </div>
+    </div>
+    <div class="sw-card">
+      <div class="sw-icon"><i class="ti ti-pencil"></i></div>
+      <div>
+        <p class="sw-name">Procreate</p>
+        <p class="sw-caption">Drawing, idea sketching</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
