@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #1a0f1f; padding: 2rem; }
+  .mw-wrap { font-family: 'Abel', sans-serif; display: flex; flex-direction: column; gap: 2rem; }
+  .mw-divider { display: flex; align-items: center; gap: 1rem; }
+  .mw-divider-line { height: 1px; flex: 1; background: rgba(255,255,255,0.08); }
+  .mw-divider-label { font-size: 11px; color: #9a8aa0; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
+  .mw-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .mw-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .mw-card { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1rem 1.1rem; display: flex; flex-direction: column; gap: 8px; }
+  .mw-card-top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .mw-icon { width: 32px; height: 32px; border-radius: 8px; background: rgba(29,233,182,0.1); display: flex; align-items: center; justify-content: center; }
+  .mw-icon i { font-size: 16px; color: #1de9b6; }
+  .mw-badge { font-size: 10px; padding: 2px 8px; border-radius: 999px; font-family: 'Abel', sans-serif; letter-spacing: 0.04em; }
+  .mw-badge-high { background: rgba(29,233,182,0.1); border: 0.5px solid rgba(29,233,182,0.35); color: #1de9b6; }
+  .mw-badge-med { background: rgba(154,138,160,0.1); border: 0.5px solid rgba(154,138,160,0.3); color: #9a8aa0; }
+  .mw-card h3 { font-size: 15px; color: #f0f0f0; margin: 0; }
+  .mw-tag { font-size: 10px; padding: 2px 8px; border-radius: 999px; background: transparent; border: 0.5px solid rgba(29,233,182,0.3); color: #1de9b6; width: fit-content; text-transform: uppercase; letter-spacing: 0.05em; }
+  .mw-card p { font-size: 12px; color: #9a8aa0; line-height: 1.55; margin: 0; }
+  .mw-proj { background: #2a1a2e; border: 0.5px solid rgba(29,233,182,0.2); border-radius: 12px; padding: 1.5rem; max-width: 560px; margin: 0 auto; width: 100%; }
+  .mw-proj-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; gap: 1rem; }
+  .mw-proj-head h3 { font-size: 20px; color: #1de9b6; margin: 0 0 4px; }
+  .mw-proj-head .meta { font-size: 12px; color: #9a8aa0; }
+  .mw-contrib { background: rgba(29,233,182,0.08); border: 0.5px solid rgba(29,233,182,0.3); border-radius: 10px; padding: 10px 16px; text-align: center; flex-shrink: 0; }
+  .mw-contrib-num { font-size: 24px; font-weight: 700; color: #1de9b6; line-height: 1; }
+  .mw-contrib-lbl { font-size: 10px; color: #9a8aa0; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 3px; }
+  .mw-roles { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1.15rem; }
+  .mw-role { font-size: 16px; color: #e5ddea; background: rgba(29,233,182,0.07); border: 0.5px solid rgba(29,233,182,0.24); padding: 7px 16px; border-radius: 999px; line-height: 1.25; }
+  .mw-desc { font-size: 13px; color: #9a8aa0; line-height: 1.65; margin: 0; }
+  .mw-footer { text-align: center; font-size: 11px; color: #6a5a75; }
+
+  .mw-pipeline { margin-top: 0.5rem; }
+  .mw-pipeline-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+  .mw-pipe-card { background: #2a1a2e; border: 0.5px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 1rem; min-height: 150px; position: relative; }
+  .mw-pipe-num { font-size: 10px; color: #1de9b6; letter-spacing: 0.08em; margin-bottom: 8px; }
+  .mw-pipe-title { font-size: 16px; color: #f0f0f0; margin-bottom: 10px; }
+  .mw-pipe-tools { font-size: 15px; color: #cfc2d7; line-height: 1.6; }
+  .mw-pipe-arrow { position: absolute; right: -8px; top: 50%; transform: translateY(-50%); color: #1de9b6; font-size: 12px; z-index: 2; }
+
+  @media (max-width: 900px) { .mw-pipeline-grid { grid-template-columns: repeat(3, 1fr); } .mw-pipe-arrow { display: none; } }
+  @media (max-width: 600px) { .mw-grid { grid-template-columns: 1fr 1fr; } .mw-grid-3 { grid-template-columns: 1fr; } .mw-pipeline-grid { grid-template-columns: 1fr 1fr; } }
+</style>
+</head>
+<body>
+<div class="mw-wrap">
+
+  <div class="mw-divider">
+    <div class="mw-divider-line"></div>
+    <span class="mw-divider-label">AI Workflow — Milkway</span>
+    <div class="mw-divider-line"></div>
+  </div>
+
+  <div class="mw-grid">
+    <div class="mw-card">
+      <div class="mw-card-top"><div class="mw-icon"><i class="ti ti-layout-list"></i></div><span class="mw-badge mw-badge-high">High</span></div>
+      <h3>LTX Studio</h3><span class="mw-tag">Story Structure</span><p>Structuring story sequences and overall narrative flow.</p>
+    </div>
+    <div class="mw-card">
+      <div class="mw-card-top"><div class="mw-icon"><i class="ti ti-eye"></i></div><span class="mw-badge mw-badge-high">High</span></div>
+      <h3>Gemini</h3><span class="mw-tag">Visual Continuity</span><p>Maintaining visual continuity across generated images.</p>
+    </div>
+    <div class="mw-card">
+      <div class="mw-card-top"><div class="mw-icon"><i class="ti ti-photo"></i></div><span class="mw-badge mw-badge-high">High</span></div>
+      <h3>Midjourney / Nano Banana</h3><span class="mw-tag">Scene Refinement</span><p>Refining individual scenes and enhancing visual concepts.</p>
+    </div>
+    <div class="mw-card">
+      <div class="mw-card-top"><div class="mw-icon"><i class="ti ti-book"></i></div><span class="mw-badge mw-badge-high">High</span></div>
+      <h3>ChatGPT</h3><span class="mw-tag">Narrative Depth</span><p>Developing narrative depth beyond visual generation.</p>
+    </div>
+    <div class="mw-card">
+      <div class="mw-card-top"><div class="mw-icon"><i class="ti ti-music"></i></div><span class="mw-badge mw-badge-high">High</span></div>
+      <h3>Suno</h3><span class="mw-tag">Soundtrack</span><p>Creating an expansive, cosmic soundtrack.</p>
+    </div>
+    <div class="mw-card">
+      <div class="mw-card-top"><div class="mw-icon"><i class="ti ti-microphone"></i></div><span class="mw-badge mw-badge-high">High</span></div>
+      <h3>ElevenLabs</h3><span class="mw-tag">Voice & Narration</span><p>Generating character voice for narration and dialogue.</p>
+    </div>
+    <div class="mw-card">
+      <div class="mw-card-top"><div class="mw-icon"><i class="ti ti-video"></i></div><span class="mw-badge mw-badge-high">High</span></div>
+      <h3>Kling / Veo</h3><span class="mw-tag">Video Generation</span><p>Video generation and final quality enhancement.</p>
+    </div>
+    <div class="mw-card">
+      <div class="mw-card-top"><div class="mw-icon"><i class="ti ti-video"></i></div><span class="mw-badge mw-badge-med">Medium</span></div>
+      <h3>Runway</h3><span class="mw-tag">Video Generation</span><p>Supplementary shot generation and iteration.</p>
+    </div>
+  </div>
+
+  <div class="mw-divider"><div class="mw-divider-line"></div><span class="mw-divider-label">Post-Production Tools</span><div class="mw-divider-line"></div></div>
+
+  <div class="mw-grid-3">
+    <div class="mw-card">
+      <div class="mw-card-top"><div class="mw-icon"><i class="ti ti-cut"></i></div><span class="mw-badge mw-badge-high">High</span></div>
+      <h3>Premiere Pro</h3><span class="mw-tag">Editing</span><p>Full offline and online edit, sequencing and sound mix.</p>
+    </div>
+    <div class="mw-card">
+      <div class="mw-card-top"><div class="mw-icon"><i class="ti ti-sparkles"></i></div><span class="mw-badge mw-badge-high">High</span></div>
+      <h3>After Effects</h3><span class="mw-tag">Motion & VFX</span><p>Motion graphics, compositing and title design.</p>
+    </div>
+    <div class="mw-card">
+      <div class="mw-card-top"><div class="mw-icon"><i class="ti ti-palette"></i></div><span class="mw-badge mw-badge-med">Medium</span></div>
+      <h3>DaVinci Resolve</h3><span class="mw-tag">Color Grading</span><p>Color correction and grading pass.</p>
+    </div>
+  </div>
+
+  <div class="mw-divider"><div class="mw-divider-line"></div><span class="mw-divider-label">Role & Contribution</span><div class="mw-divider-line"></div></div>
+
+  <div class="mw-proj">
+    <div class="mw-proj-head">
+      <div><h3>Milkway</h3><div class="meta">AI Short Film · Solo Production</div></div>
+      <div class="mw-contrib"><div class="mw-contrib-num">100%</div><div class="mw-contrib-lbl">Contribution</div></div>
+    </div>
+    <div class="mw-roles">
+      <span class="mw-role">Director</span><span class="mw-role">AI Content Builder</span><span class="mw-role">AI Creative Producer</span><span class="mw-role">Editor</span>
+    </div>
+    <p class="mw-desc">Conceived, wrote, and produced entirely solo — from script through generative image and video production to final sound design and edit.</p>
+  </div>
+
+
+  <div class="mw-divider">
+    <div class="mw-divider-line"></div>
+    <span class="mw-divider-label">Production Pipeline</span>
+    <div class="mw-divider-line"></div>
+  </div>
+
+  <div class="mw-pipeline">
+    <div class="mw-pipeline-grid">
+      <div class="mw-pipe-card">
+        <div class="mw-pipe-num">01</div>
+        <div class="mw-pipe-title">Ideation</div>
+        <div class="mw-pipe-tools">Claude<br>ChatGPT</div>
+        <span class="mw-pipe-arrow">→</span>
+      </div>
+      <div class="mw-pipe-card">
+        <div class="mw-pipe-num">02</div>
+        <div class="mw-pipe-title">Storyboard</div>
+        <div class="mw-pipe-tools">LTX Studio</div>
+        <span class="mw-pipe-arrow">→</span>
+      </div>
+      <div class="mw-pipe-card">
+        <div class="mw-pipe-num">03</div>
+        <div class="mw-pipe-title">Visual Development</div>
+        <div class="mw-pipe-tools">Gemini<br>Midjourney<br>Nano Banana</div>
+        <span class="mw-pipe-arrow">→</span>
+      </div>
+      <div class="mw-pipe-card">
+        <div class="mw-pipe-num">04</div>
+        <div class="mw-pipe-title">Video Generation</div>
+        <div class="mw-pipe-tools">Kling<br>Veo<br>Runway</div>
+        <span class="mw-pipe-arrow">→</span>
+      </div>
+      <div class="mw-pipe-card">
+        <div class="mw-pipe-num">05</div>
+        <div class="mw-pipe-title">Voice & Music</div>
+        <div class="mw-pipe-tools">ElevenLabs<br>Suno</div>
+        <span class="mw-pipe-arrow">→</span>
+      </div>
+      <div class="mw-pipe-card">
+        <div class="mw-pipe-num">06</div>
+        <div class="mw-pipe-title">Post-Production</div>
+        <div class="mw-pipe-tools">Premiere Pro<br>After Effects<br>DaVinci Resolve</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mw-footer">Proficiency: High / Medium — self-assessed based on hands-on production use</div>
+
+</div>
+</body>
+</html>
